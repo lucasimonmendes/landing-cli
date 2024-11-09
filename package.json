@@ -1,0 +1,20 @@
+{
+  "name": "landing-cli",
+  "version": "1.0.0",
+  "description": "CLI para criar landing pages Next.js a partir de templates",
+  "main": "cli.mjs",
+  "bin": {
+    "landing-cli": "./cli.mjs"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node cli.mjs"
+  },
+  "author": "Seu Nome",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^10.0.0",
+    "inquirer": "^9.0.0",
+    "fs-extra": "^11.1.1"
+  }
+}
