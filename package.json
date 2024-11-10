@@ -4,7 +4,7 @@
   "description": "CLI para criar landing pages Next.js a partir de templates",
   "main": "cli.mjs",
   "bin": {
-    "landing-cli": "./cli.mjs"
+    "landing-cli": "./cli.js"
   },
   "type": "module",
   "scripts": {
