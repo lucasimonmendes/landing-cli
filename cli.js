@@ -6,11 +6,6 @@ import fs from "fs-extra";
 import path from "path";
 import { fileURLToPath } from "url";
 
-// const { Command } = require("commander");
-// import inquirer from "inquirer";
-// const fs = require("fs-extra");
-// const path = require("path");
-
 // Configuração para __dirname com módulos ES6
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
