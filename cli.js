@@ -6,6 +6,10 @@ import fs from "fs-extra";
 import path from "path";
 import { fileURLToPath } from "url";
 
+import chalk from "chalk";
+import figlet from "figlet";
+
+
 // Configuração para __dirname com módulos ES6
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -13,8 +17,11 @@ const __dirname = path.dirname(__filename);
 const program = new Command();
 
 program
-  .version("1.0.0")
+  .version("1.1.0")
   .description("CLI para criar landing pages Next.js a partir de templates");
+
+console.log(chalk.magenta(figlet.textSync('Landing CLI')))
+
 
 // Caminho para os templates
 const templatesDir = path.join(__dirname, "./templates/");
@@ -56,11 +63,12 @@ program
 
       // Copiar o template para a pasta do novo projeto
       await fs.copy(templatePath, projectPath);
+      let message = `Projeto ${projectName} criado com sucesso em ${projectPath}!`
       console.log(
-        `Projeto '${projectName}' criado com sucesso em ${projectPath}`,
+        `${chalk.green(message)}`
       );
     } catch (error) {
-      console.error("Erro ao criar o projeto:", error);
+      console.error(`${chalk.red("Erro ao criar o projeto: ")}`, error);
     }
   });
 
