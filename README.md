@@ -6,6 +6,8 @@
 
 Landing CLI é uma ferramenta de linha de comando (CLI) para criar rapidamente projetos de landing pages baseados em templates pré-definidos em **Next.js**. A CLI permite que você escolha entre vários templates e configure rapidamente um novo projeto.
 
+![demonstration](./docs/media/01_landing-cli_create.gif)
+
 ## Requisitos
 
 - **Node.js** (versão 16 ou superior)
